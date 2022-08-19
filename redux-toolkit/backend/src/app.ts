@@ -13,10 +13,10 @@ app.use(express.json())
 
 app.get('/health', (req, res) => {
     console.log('I am super healthy')
-    throw new Error('create Error')
+    // throw new Error('create Error')
     return res.status(200).json({
         isSuccess: true,
-        data: { name: "karl" }
+        data: 'karl'
     }
         )
 })
